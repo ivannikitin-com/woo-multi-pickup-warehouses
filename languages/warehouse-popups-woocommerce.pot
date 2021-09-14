@@ -1,0 +1,347 @@
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-31 23:50+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:110
+msgid "Warehouses"
+msgstr "Warehouses"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:146
+msgid "Edit Warehouse Details"
+msgstr "Edit Warehouse Details"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:179
+msgid "Venby Woocommerce Warehouses"
+msgstr "Venby Woocommerce Warehouses"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:197
+msgid "Warehouse Popups Woocommerce PRO"
+msgstr "Warehouse Popups Woocommerce PRO"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:197
+msgid "plugin requires"
+msgstr "plugin requires"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:365
+msgid "Connected Warehouses"
+msgstr "Connected Warehouses"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:366
+msgid "Connect additional warehouses here. Do not include your main [default] warehouse."
+msgstr ""
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:378
+msgid "Integrate Venby Woocommerce Warehouses With Zapier"
+msgstr "Integrate Venby Woocommerce Warehouses With Zapier"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:379
+msgid "Manage Inventory"
+msgstr "Manage Inventory"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:379
+msgid "Connect"
+msgstr "Connect"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:393
+msgid "Venby API Key"
+msgstr "Venby API Key"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:395
+msgid "Connect With Zapier"
+msgstr "Connect With Zapier"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:398
+msgid "Save"
+msgstr "Save"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:399
+#: admin/class-warehouse-popups-woocommerce-admin.php:603
+#: admin/class-warehouse-popups-woocommerce-admin.php:621
+msgid "Cancel"
+msgstr "Cancel"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:403
+msgid "Shortcode Instructions:"
+msgstr "Shortcode Instructions:"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:404
+msgid "To display Warehouses Dropdown Switch on your website - use"
+msgstr "To display Warehouses Dropdown Switch on your website - use"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:404
+msgid "shortcode."
+msgstr "shortcode"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:404
+msgid "You can put it anywhere into page content using Wp Admin editor just by copy-paste,"
+msgstr ""
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:405
+msgid "or insert as PHP code into your theme files:"
+msgstr "or insert as PHP code into your theme files:"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:407
+msgid "Or use"
+msgstr "Or use"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:408
+msgid "shortcode to switch warehouses in popup flybox."
+msgstr "shortcode to switch warehouses in popup flybox."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:410
+msgid "Usage Instructions:"
+msgstr ""
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:411
+msgid "Usage Instructions:"
+msgstr ""
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:411
+msgid "Get currency converter API key for:"
+msgstr "Get currency converter API key for:"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:411
+msgid "The Currency Converter API"
+msgstr "The Currency Converter API"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:449
+msgid "Use default Woocommerce Product Quantity?"
+msgstr "Use default Woocommerce Product Quantity?"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:453
+msgid "No"
+msgstr "No"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:454
+msgid "Yes"
+msgstr "Yes"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:458
+#: admin/class-warehouse-popups-woocommerce-list-table.php:18
+msgid "Warehouse Name"
+msgstr "Warehouse Name"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:462
+msgid "Warehouse Location"
+msgstr "Warehouse Location"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:466
+msgid "Warehouse Currency"
+msgstr "Warehouse Currency"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:481
+msgid "Convert Ratio"
+msgstr "Convert Ratio"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:483
+msgid "Flat (only changes currency symbol)"
+msgstr "Flat (only changes currency symbol)"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:484
+msgid "Manual, set your own exchange ratio:"
+msgstr "Manual, set your own exchange ratio:"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:485
+msgid "Real-time currency conversion, round up to nearest whole currency unit"
+msgstr "Real-time currency conversion, round up to nearest whole currency unit"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:486
+msgid "Real-time currency conversion, round up to nearest decimal XX."
+msgstr "Real-time currency conversion, round up to nearest decimal XX."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:487
+msgid "Currency Converter API"
+msgstr "Currency Converter API"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:495
+msgid "Currency Converter API Key"
+msgstr "Currency Converter API Key"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:501
+msgid "Connected Payment Gateways"
+msgstr "Connected Payment Gateways"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:522
+msgid "No enabled warehouses in WooCommerce."
+msgstr "No enabled warehouses in WooCommerce."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:530
+msgid "Location Detection"
+msgstr "Location Detection"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:532
+msgid "by Country"
+msgstr "by Country"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:536
+msgid "by Connected WarehousesShipping Zone"
+msgstr "by Connected WarehousesShipping Zone"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:542
+msgid "Country"
+msgstr "Country"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:558
+msgid "Zip Codes"
+msgstr "Zip Codes"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:561
+msgid "List Zip postal codes separated by comma."
+msgstr "List Zip postal codes separated by comma."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:562
+msgid "Zone Zip Codes option available only in USA, Canada, United Kingdom and Germany."
+msgstr "Zone Zip Codes option available only in USA, Canada, United Kingdom and Germany."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:562
+msgid "Zip Code detection can be restricted by customer Internet Service Provider."
+msgstr "Zip Code detection can be restricted by customer Internet Service Provider."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:568
+#: admin/class-warehouse-popups-woocommerce-list-table.php:23
+msgid "Countries"
+msgstr "Countries"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:571
+msgid "Users from selected countries will be automatically redirected to this warehouse."
+msgstr "Users from selected countries will be automatically redirected to this warehouse."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:572
+msgid "List country codes separated by comma."
+msgstr "List country codes separated by comma."
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:572
+msgid "See country codes list"
+msgstr "See country codes list"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:601
+msgid "Create Warehouse"
+msgstr "Create Warehouse"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:602
+msgid "Add Warehouse"
+msgstr "Add Warehouse"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:618
+#: admin/class-warehouse-popups-woocommerce-admin.php:619
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:722
+#: admin/class-warehouse-popups-woocommerce-admin.php:784
+msgid "Additional Warehouses"
+msgstr "Additional Warehouses"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:742
+msgid "Stock quantity Alt"
+msgstr "Stock quantity Alt"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:744
+#: admin/class-warehouse-popups-woocommerce-admin.php:808
+msgid "Warehouse location: "
+msgstr "Warehouse location: "
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:758
+msgid " Allow backorders?"
+msgstr " Allow backorders?"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:761
+#: admin/class-warehouse-popups-woocommerce-admin.php:823
+msgid "This control will manage backorders for warehouse only: "
+msgstr "This control will manage backorders for warehouse only: "
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:806
+msgid " Stock quantity Alt"
+msgstr " Stock quantity Alt"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:820
+msgid "Allow backorders?"
+msgstr "Allow backorders?"
+
+#: admin/class-warehouse-popups-woocommerce-admin.php:840
+msgid "API Key is required."
+msgstr "API Key is required."
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:19
+msgid "Location"
+msgstr "Location"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:20
+msgid "Currency"
+msgstr "Currency"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:21
+msgid "Ratio"
+msgstr "Ratio"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:22
+msgid "Payment Gateway"
+msgstr "Payment Gateway"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:24
+msgid "Use Default Stock Quantity?"
+msgstr "Use Default Stock Quantity?"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:38
+msgid "Edit"
+msgstr "Edit"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:39
+msgid "Delete Entry?"
+msgstr "Delete Entry?"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:39
+msgid "Delete"
+msgstr "Delete"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:56
+msgid "n/a"
+msgstr "n/a"
+
+#: admin/class-warehouse-popups-woocommerce-list-table.php:179
+msgid "No warehouses have been created."
+msgstr "No warehouses have been created."
+
+#: includes/class-warehouse-popups-woocommerce-activator.php:43
+msgid "You do not have proper authorization to activate a plugin!"
+msgstr "You do not have proper authorization to activate a plugin!"
+
+#: includes/class-warehouse-popups-woocommerce-activator.php:51
+msgid "This plugin requires "
+msgstr "This plugin requires "
+
+#: includes/class-warehouse-popups-woocommerce-activator.php:51
+msgid " plugin to be active!"
+msgstr " plugin to be active!"
+
+#: includes/class-warehouse-popups-woocommerce.php:90
+#, php-format
+msgid "WooCommerce Additional Variation Images Plugin requires WooCommerce to be installed and active. You can download %s here."
+msgstr "WooCommerce Additional Variation Images Plugin requires WooCommerce to be installed and active. You can download %s here."
+
+#: public/class-warehouse-popups-woocommerce-public.php:196
+msgid "Select Your Location:"
+msgstr "Select Your Location:"
+
+#: public/class-warehouse-popups-woocommerce-public.php:268
+msgid "Click to change your warehouse"
+msgstr "Click to change your warehouse"
+
+#: public/class-warehouse-popups-woocommerce-public.php:564
+#: public/class-warehouse-popups-woocommerce-public.php:593
+msgid "Warehouse"
+msgstr "Warehouse"

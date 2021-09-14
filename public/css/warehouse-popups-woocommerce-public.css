@@ -1,0 +1,24 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.wh_flybox_popup {display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 10000001;}
+.wh_flybox_popup .wh_flybox_popup_overlay {position: fixed; background: rgba(0,0,0,0.4); top: 0; right: 0; bottom: 0; left: 0;}
+.wh_flybox_popup .wh_flybox_popup_content {color: #495259; position: absolute; padding: 1em; background: #EFEFEF;   overflow: visible;}
+.wh_flybox_popup .wh_flybox_popup_content .wh_flybox_warehouses_list {margin-top: 2em;}
+.wh_flybox_popup .wh_flybox_popup_content h3 {font-size: 1.5em; margin-top: 0.5em; margin-bottom: 0.5em; text-align: center;}
+.wh_flybox_popup .wh_flybox_popup_content .wh_flybox_close_btn_container {fill: rgb(164, 169, 172); cursor: pointer; display: block; width: 1em; height: 1em; position: absolute; right: 1em; top: 1em;}
+.wh_flybox_popup .wh_flybox_popup_content .wh_flybox_button {cursor: pointer; position: relative; display: block; font-size: 1.2em; text-align: center; margin: 0.5em auto; width: 50%; max-width: 200px; padding: 0.5em 2em; border: 1px solid grey; border-radius: 5px; overflow: hidden;}
+.wh_flybox_popup .wh_flybox_popup_content .wh_flybox_button:hover, .wh_flybox_popup .wh_flybox_popup_content .wh_flybox_button.checked {background: lightgrey;}
+.wh_flybox_popup .wh_flybox_popup_content .wh_flybox_button input[type=radio] {position: absolute; left: -2em;}
+
+@media only screen and (max-device-width : 768px) {
+
+    .wh_flybox_popup .wh_flybox_popup_content {height: 100%;  width: 100%; transform: none; left: 0; top: 0; border-radius: 0;}
+}
+
+@media only screen and (min-device-width : 769px) {
+
+    .wh_flybox_popup .wh_flybox_popup_content {border-radius: 5px; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 25em;  max-width: 90%; max-height: 90%;}
+}

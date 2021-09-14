@@ -1,0 +1,38 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+table.warehouse-popups-woocommerce-pro-list .column-name input,
+table.warehouse-popups-woocommerce-pro-list .column-location input {width: 100%;}
+table.warehouse-popups-woocommerce-pro-list tfoot {display: none;}
+table.warehouse-popups-woocommerce-pro-list .row-actions {display: inline; margin-left: 1em;}
+.warehouse-popups-woocommerce-pro-list>tfoot:first-child {display: none;}
+table.new-warehouse-cont a.button {display: inline-block; margin: 0;}
+
+table.edit-warehouse-cont #currency-api-key, table.new-warehouse-cont #currency-api-key {display: none;}
+table.edit-warehouse-cont #currency-api-key.active, table.new-warehouse-cont #currency-api-key.active {display: table-row;}
+
+.manage-popup { display: none; }
+.manage-popup.active { display: block; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 300000; }
+.manage-popup .popup-background { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
+.manage-popup .manage-form { display: none; width: 500px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 50px 30px; background: #fff; border-radius: 5px; }
+.manage-popup .manage-form.active { display: flex; flex-wrap: wrap }
+.manage-popup .manage-form .close-btn { display: block; width: 20px; height: 20px; text-indent: 20px; overflow: hidden; position: absolute; top: 20px; right: 20px; }
+.manage-popup .manage-form .close-btn:before { display: block; content: ''; width: 26.3px; height: 2px; background: #000; position: absolute; top: 9px; left: 0; transform: translate(-3px, 0) rotate(-45deg); }
+.manage-popup .manage-form .close-btn:after { display: block; content: ''; width: 26.3px; height: 2px; background: #000; position: absolute; top: 9px; left: 0; transform: translate(-3px, 0) rotate(45deg); }
+.manage-popup .manage-form .form-group { margin-bottom: 15px; width: 100%; }
+.manage-popup .manage-form .form-group:last-child { margin: 0; }
+.manage-popup .manage-form .form-group:after { display: block; clear: 'both'; }
+.manage-popup .manage-form .form-group p { margin: 0; }
+.manage-popup .manage-form .form-group input[type='text'] { width: 100%; margin-top: 5px; }
+.manage-popup .manage-form .form-group button { padding: 10px 30px; border: 1px solid #2e6da4; background-color: #337ab7; color: #fff; border-radius: 3px; box-shadow: none; float: right; }
+.manage-popup .manage-form .form-group button:hover { background-color: #286090; border-color: #204d74; cursor: pointer; }
+.manage-popup .manage-form .form-group button.btn-zapier { margin-right: 10px; }
+.manage-popup .manage-form .form-group button.btn-cancel { background-color: #fff; color: #333; margin-right: 10px; border-color: #ccc; }
+.manage-popup .manage-form .form-group button.btn-cancel:hover { background-color: #e6e6e6; border-color: #adadad; }
+.manage-popup .manage-form .loading-wrapper { display: none; }
+.manage-popup .manage-form.waiting .loading-wrapper { position: absolute; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; display: inline-flex; justify-content: center; align-items: center; }
+.manage-popup .manage-form.waiting .loading-wrapper:before { display: block; content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.4); border-radius: 5px; }
+.manage-popup .manage-form.waiting .loading-wrapper img { width: 40px; }
+.inventory-form{display: none;}
+.warehouse-popups-woocommerce-list tfoot {display: none !important;}

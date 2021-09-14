@@ -1,0 +1,79 @@
+2.0.3 - Country & shipping zone fix for site entry/checkout
+
+2.0.2 - Fix more GEO IP latency issues
+
+2.0.1 - Fix GEO IP latency issues
+
+1.5.1 - Fix bugs on admin page and shop page
+
+1.5.0 - Update admin page and bugs fixing
+
+1.4.9.2 - Bugs fixing
+
+1.4.9.1 - Bug fixing
+
+1.4.9 - Default warehouse defined automatically by customer's region
+
+1.4.8 - Adaptive to PHP 7.4
+
+1.4.7 - Fix bugs with admin page
+
+1.4.6 - Fix bugs with admin page
+
+1.4.5 - Fix bugs with admin page
+
+1.4.4 - Update admin page
+
+1.4.3 - Update admin page
+
+1.4.2 - Adding different emails for different warehouses
+
+1.4.1 - Adding correct address in admin-panel
+
+1.4.0 - Optimization, defining nearest warehouse by Google Map API
+
+1.3.9 - Optimization, defining country by API
+
+1.3.8 - Warehouse defined automatically by customer's region
+
+1.3.7 - Woocommerce shipping zone functionality extended to include additional warehouses and Squash some bugs
+
+1.3.6 - fix several bugs and make translation
+
+1.3.5 - change currency converter api and fix minor bug
+
+1.3.4 - fix geolocation issue
+
+1.3.3 - fix minor bugs(cart inventory issue)
+
+1.3.2 - fix minor bugs(cart total price issue)
+
+1.3.1 - cancel wp engine geoip dependency
+
+1.3.0 - fix minor bugs(cart && price filter)
+
+1.2.9 - auto currency change function by geo location, minor bugfixes(dependency issue)
+
+1.2.8 - added currency switcher function, minor bugfixes
+
+1.2.7 - added GeoTarget plugin dependency, minor bugfixes
+
+1.2.6 - used Woo Store address as default Warehouse address
+
+1.2.5 - minor bugfixes to match latest PHP and Wordpress requirements
+
+1.2.0 - shipping zones, uploaded to wordpress storage
+
+1.1.5 - individual backorder settings for alt warehouses
+
+1.1.2 - use default warehouses (use default inventory/variations stock qty counters)
+
+1.1.0 - editable warehouses
+
+1.0.5 - added currencies
+
+1.0.0 - gateways added
+
+0.9.5 - first live version run
+
+0.9.0 - basic functions with stock inventory hooks and multiple warehouses
