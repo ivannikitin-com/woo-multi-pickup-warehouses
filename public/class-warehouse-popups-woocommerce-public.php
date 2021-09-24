@@ -652,7 +652,7 @@ class Warehouse_Popups_Woocommerce_Public
     }
 
     public static function warehouse_select($method, $index) {
-        if ('local_pickup:4' === $method->id) {
+        if ( 'local_pickup:14' === $method->id) {
             $warehouse_list = (array)json_decode(get_option('warehouse-popups-woocommerce-list'), true);
             $options = array();
             foreach ($warehouse_list as $warehouse) {
@@ -668,7 +668,8 @@ class Warehouse_Popups_Woocommerce_Public
                   'label'         => '',
                   'options'       => $options,
                   'default' => $arr_keys[0]
-                  ), /*WC()->checkout->get_value( 'wh-popups-warehouse-id' )*/);
+                  ));
+                /*WC()->checkout->get_value( 'wh-popups-warehouse-id' )*/
              
                 echo '</div>';
             }

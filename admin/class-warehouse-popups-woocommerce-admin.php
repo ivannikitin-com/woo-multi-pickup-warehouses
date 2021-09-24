@@ -2163,11 +2163,12 @@ class Warehouse_Popups_Woocommerce_Admin {
 
 	}
 
-	private static function custom_checkout_field_display_admin_order_meta( $item_id, $item, $par ) {
+	public function custom_checkout_field_display_admin_order_meta( $item_id, $item, $par ) {
 	    global $post;
 	    if (get_class($item) != 'WC_Order_Item_Shipping') {
 	        return;
 	    }
+
 	    $order_id = $post->ID;
 	    $warehouse_list = (array)json_decode(get_option('warehouse-popups-woocommerce-list'));
 	    $warehouse_id = get_post_meta( $order_id, '_wh-popups-warehouse-id', true );
