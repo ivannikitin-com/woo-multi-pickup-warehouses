@@ -1362,7 +1362,7 @@ class Warehouse_Popups_Woocommerce_Public
     }
 
     //private function get_geoip_data() {
-    function get_geoip_data(){
+    private static function get_geoip_data(){
         if (is_admin()) {
             return false;
         }
@@ -1397,7 +1397,7 @@ class Warehouse_Popups_Woocommerce_Public
         return $return_arr;
     }
 	
-	function _wmw_ip_to_s($ip){
+	private static function _wmw_ip_to_s($ip){
 		$binary = '';
 		try {
 			$binary = @inet_pton($ip);
@@ -1407,7 +1407,7 @@ class Warehouse_Popups_Woocommerce_Public
 		return base64_encode($binary);
 	}
 	
-	function _wmw_get_data_from_cache( $ip ) {
+	private static function _wmw_get_data_from_cache( $ip ) {
 		$ip_s = self::_wmw_ip_to_s($ip);
 		if (!$ip_s) {
 			return null;
@@ -1419,7 +1419,7 @@ class Warehouse_Popups_Woocommerce_Public
 		return $data;
 	}
 	
-	function _wmw_add_data_to_cache( $data, $ip ) {
+	private static function _wmw_add_data_to_cache( $data, $ip ) {
 	
 		$ip_s = self::_wmw_ip_to_s( $ip );
 		
@@ -1434,7 +1434,7 @@ class Warehouse_Popups_Woocommerce_Public
 		set_transient( $key, $data, $expire );
 	}
 	
-	function _wmw_get_geo_address( $ip ){
+	private static function _wmw_get_geo_address( $ip ){
 		$access_key			= '7583a28b676f8a5625ab332e02a5a9d1'; //BMC
 		$geoip_url			= 'http://api.ipstack.com/'.$ip.'?access_key='.$access_key; //BMC
 		$json				= self::curl_get_contents($geoip_url);
