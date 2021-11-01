@@ -242,7 +242,7 @@ class Warehouse_Popups_Woocommerce
         $this->loader->add_filter('woocommerce_add_cart_item_data', $plugin_public, 'wh_popups_add_cart_item_data', 10, 3);
         $this->loader->add_filter('woocommerce_get_item_data', $plugin_public, 'wh_popups_get_item_data', 10, 2);
         $this->loader->add_filter('woocommerce_order_item_quantity', $plugin_public, 'wh_popups_filter_item_quantity', 10, 3);
-        $this->loader->add_filter('woocommerce_get_cart_item_from_session', $plugin_public, 'wh_popups_cart_item_from_session', 10, 3);
+        //$this->loader->add_filter('woocommerce_get_cart_item_from_session', $plugin_public, 'wh_popups_cart_item_from_session', 10, 3);
         $this->loader->add_filter('woocommerce_add_order_item_meta', $plugin_public, 'wh_popups_add_order_item_meta', 10, 3);
         $this->loader->add_filter('woocommerce_currency', $plugin_public, 'wh_popups_override_currency', 10, 1);
         $this->loader->add_filter('woocommerce_currency_symbol', $plugin_public, 'woocommerce_custom_currency_symbol', 10, 2);
@@ -265,13 +265,14 @@ class Warehouse_Popups_Woocommerce
         $this->loader->add_filter('woocommerce_before_cart', $plugin_public, 'wh_popups_override_before_cart', 10, 1);
         $this->loader->add_filter('woocommerce_review_order_before_cart_contents', $plugin_public, 'wh_popups_override_before_cart', 10, 0);
         $this->loader->add_short_code('wh_popups_warehouses_switch', $plugin_public, 'woo_switch_content');
-        $this->loader->add_short_code( 'wh_popups_warehouses_flybox', $plugin_public, 'woo_switch_flybox_content');
-        $this->loader->add_short_code( 'wh_popups_warehouse_client_ip_data', $plugin_public, 'wh_client_ip_data' ); //BMC
-        $this->loader->add_action( 'wp_footer', $plugin_public, 'woo_switch_hidden_flybox' ); //BMC
+        //$this->loader->add_short_code( 'wh_popups_warehouses_flybox', $plugin_public, 'woo_switch_flybox_content');
+        //$this->loader->add_short_code( 'wh_popups_warehouse_client_ip_data', $plugin_public, 'wh_client_ip_data' ); //BMC
+        //$this->loader->add_action( 'wp_footer', $plugin_public, 'woo_switch_hidden_flybox' ); //BMC
         $this->loader->add_filter(' woocommerce_product_get_stock_quantity', $plugin_public, 'wh_popups_get_stock_quantity', 10, 2 ); //BMC
         $this->loader->add_filter( 'woocommerce_product_variation_get_stock_quantity', $plugin_public, 'wh_popups_get_stock_quantity', 10, 2 ); //BMC
         $this->loader->add_action( 'woocommerce_after_shipping_rate', $plugin_public, 'warehouse_select', 10, 2 );
-        $this->loader->add_action( 'woocommerce_checkout_process', $plugin_public, 'warehouse_checkout_field_process');
+        $this->loader->add_action( 'woocommerce_after_checkout_validation', $plugin_public, 'warehouse_checkout_fields_validation', 10, 2);
+        //$this->loader->add_action( 'woocommerce_checkout_process', $plugin_public, 'warehouse_checkout_field_process');
         $this->loader->add_filter( 'woocommerce_checkout_posted_data', $plugin_public, 'add_order_custom_fields' );
         $this->loader->add_action( 'woocommerce_checkout_update_order_meta', $plugin_public, 'checkout_update_order_meta', 10, 2 );
         $this->loader->add_action( 'woocommerce_reduce_order_stock', $plugin_public, 'reduce_order_selected_stock' );

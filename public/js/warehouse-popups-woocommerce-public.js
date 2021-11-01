@@ -1,4 +1,4 @@
-(function ($) {
+( function( $ ) {
     'use strict';
 
     /**
@@ -12,14 +12,14 @@
      * This enables you to define handlers, for when the DOM is ready:
      *
      * $(function() {
-	 *
-	 * });
+     *
+     * });
      *
      * When the window is loaded:
      *
      * $( window ).load(function() {
-	 *
-	 * });
+     *
+     * });
      *
      * ...and/or other possibilities.
      *
@@ -29,14 +29,21 @@
      * practising this, we should strive to set a better example in our own work.
      */
 
-    $(function () {
-        if ($("#wh-popups-change-wh-select").length > 0) {
-            console.log('switch exists');
+    $( function() {
+        $( '.woocommerce-checkout' ).on( 'change', '#shipping_method input[name="wh-popups-warehouse-id"]', function() {
+            $( this ).closest( '#custom_checkout_field' ).siblings( 'input[name^="shipping_method"]' ).prop( 'checked', true );
+        } );
+        $( '.woocommerce-checkout' ).on( 'change', 'input[id*="local_pickup"]', function() {
+            console.log( 'change' );
+            if ( $( this ).prop( 'checked' ) == false ) {
+                $( this ).children( 'input[type="radio"]' ).prop( 'checked', false );
+            }
+        } );
+        if ( $( "#wh-popups-change-wh-select" ).length > 0 ) {
 
-            $(".wh-popups-wh-switch").delegate('#wh-popups-change-wh-select', "change", function () {
-                console.log('switch changed');
-                $(this).closest('form').submit();
-            });
+            $( ".wh-popups-wh-switch" ).delegate( '#wh-popups-change-wh-select', "change", function() {
+                $( this ).closest( 'form' ).submit();
+            } );
 
             // $("#wh-popups-change-wh-select").change(function(){
             //     console.log('switch changed');
@@ -44,22 +51,22 @@
             // });
         }
 
-        if ($(".wh_flybox_popup").length > 0) {
-            console.log('flybox exists');
-            $(".wh_popups_flybox_switch").click(function () {
-                $(".wh_flybox_popup").fadeIn(300);
+        if ( $( ".wh_flybox_popup" ).length > 0 ) {
+            console.log( 'flybox exists' );
+            $( ".wh_popups_flybox_switch" ).click( function() {
+                $( ".wh_flybox_popup" ).fadeIn( 300 );
                 return false;
-            });
+            } );
 
-            $(".wh_flybox_close_btn_container").click(function () {
-                $(".wh_flybox_popup").fadeOut(200);
+            $( ".wh_flybox_close_btn_container" ).click( function() {
+                $( ".wh_flybox_popup" ).fadeOut( 200 );
                 return false;
-            });
+            } );
 
-            $('.wh_flybox_popup_content form input[type=radio][name=wh_popups_change_wh_to]').change(function () {
-                $(this).closest('form').submit();
+            $( '.wh_flybox_popup_content form input[type=radio][name=wh_popups_change_wh_to]' ).change( function() {
+                $( this ).closest( 'form' ).submit();
                 return false;
-            });
+            } );
         }
-    });
-})(jQuery);
+    } );
+} )( jQuery );

@@ -320,7 +320,6 @@ class Warehouse_Popups_Woocommerce_Public
         // echo $dataip['timezone'];
         // echo '<br>';
         // echo $dataip['currency'];
-        print_r($dataip);
         //unset($_COOKIE['wh_geoip_data']);
         echo '</div>';
     }
@@ -652,6 +651,9 @@ class Warehouse_Popups_Woocommerce_Public
     }
 
     public static function warehouse_select($method, $index) {
+        /*Временно привязано к конкретному способу доставки. 
+        Нужно вынести в настройки выбор способа, к которому 
+        привязывать склады.*/
         if ( 'local_pickup:14' === $method->id) {
             $warehouse_list = (array)json_decode(get_option('warehouse-popups-woocommerce-list'), true);
             $options = array();
@@ -663,11 +665,12 @@ class Warehouse_Popups_Woocommerce_Public
                 echo '<div id="custom_checkout_field">';
      
                 woocommerce_form_field( 'wh-popups-warehouse-id', array(
-                  'type'          => 'select',
+                  'type'          => 'radio',
                   'class'         => array('form-row-wide'),
                   'label'         => '',
                   'options'       => $options,
-                  'default' => $arr_keys[0]
+                  // 'default' => $arr_keys[0]
+                  'default'       => ''
                   ));
                 /*WC()->checkout->get_value( 'wh-popups-warehouse-id' )*/
              
@@ -694,7 +697,16 @@ class Warehouse_Popups_Woocommerce_Public
     public static function warehouse_checkout_field_process() {
         if (isset($_POST['shipping_method']) && strpos($_POST['shipping_method'][0],'local_pickup')!==false) {
             if ( isset($_POST['wh-popups-warehouse-id']) &&  empty($_POST['wh-popups-warehouse-id'])) {
-            wc_add_notice('Не выбран офис самовывоза.', 'error' );
+            wc_add_notice(__('Не выбран офис самовывоза.', 'warehouse-popups-woocommerce'), 'error' );
+            }
+        }
+    }
+
+    public static function warehouse_checkout_fields_validation($data, $errors) {
+        file_put_contents('checkout_data.txt', json_encode($data).PHP_EOL);
+        if (isset($data['shipping_method']) && mb_strpos($data['shipping_method'][0],'local_pickup')!==false) {
+            if ( !isset($data['wh-popups-warehouse-id']) || empty($data['wh-popups-warehouse-id'])) {
+                $errors->add('validation', __('Не выбран офис самовывоза.', 'warehouse-popups-woocommerce') );
             }
         }
     }
